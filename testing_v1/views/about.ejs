@@ -1,0 +1,49 @@
+<% include ./partials/header.ejs %>
+		
+	<!-- page backdrop -->
+	<div style="height: 650px;">
+		<div id="aboutPanel" style="position: absolute;">
+			<img id="aboutPanel_backdrop" src="images/zoompov3.png">
+		</div>
+		<h1 id="subpageTitle" style="padding-top: 325px; text-shadow: -2px 7px 8px rgb(32, 32, 32); font-size: 147px;">ABOUT</h1>
+	</div>
+	
+
+	<!-- page content -->
+  	<div id="aboutPanel_info" style="padding-top: 100px;">
+    	<div class="container" style="width: 70%;">
+			<!-- introduction -->
+			<h1 id="subheading">What is Hyperloop?</h1>
+			<!-- video -->
+			<video width="100%" height="100%" controls poster="./images/vid_thumbnail.png">
+				<source src="./videos/hyperloopIntro.mp4" type="video/mp4">
+				Your browser does not support the video.
+			</video>
+			<!-- citation for video -->
+			<p style="font-size: 10px;"><i>Credit: Hyperloop One, "Hyperloop Explained" - 2nd August 2017.</i></p>
+			<br>
+			<!-- information -->
+			<div style="font-size: 23px;">
+				<p id="startingParagraph">
+					Hyperloop is a form of transportation that will revolutionize the way we move. It was first proposed by Elon Musk in a white paper published in 2013 
+					and will permit us to travel at unparalleled speeds, allowing global interconnectivity in a matter of minutes.
+				</p>
+				<p class="paragraph">
+					The McMaster Hyperloop team is dedicated towards the innovation of the fifth mode of transportation.  
+					Our proposed route is from Toronto to Montreal, and our goal is to reduce this travel time to a mere 39 minutes, travelling close to the speed of sound. 
+				</p>
+				<p class="paragraph">
+					The Hyperloop Pod Competition was started by SpaceX in 2015 to encourage a move towards sustainable transportation. The competing teams are required to create 
+					a functional high-speed prototype of a hyperloop pod. The Hyperloop Pod Competition is now in its fourth installment, with only one judgement criteria, achieving 
+					maximum speeds with successful deceleration.
+				</p>
+				<p class="paragraph">
+					<!-- image of mac -->
+					<img id="macu" class="float-left" src="images/macu2.jpg">We are proud to say that McMaster Hyperloop 
+					was one of the few teams to qualify in the very first Hyperloop Competition in 2015. We hope to carry on that legacy and build upon that tradition of excellence. 
+				</p>
+			</div>  
+    	</div>
+	</div>
+	
+<% include ./partials/footer.ejs %>
