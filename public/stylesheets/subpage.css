@@ -1,0 +1,289 @@
+#aboutPanel_backdrop
+{
+  width: 100%;
+}
+
+#teamPanel_backdrop
+{
+  width: 100%;
+}
+
+#aboutPanel
+{
+  width: 100%;
+  margin-top: 70px;
+  position: absolute;
+  z-index: -100;
+}
+
+#teamPanel
+{
+  width: 100%;
+  /* position: absolute; */
+  background-color: rgb(61, 152, 255);
+  margin-top: 60px;
+  z-index: -100;
+  height: 500px;
+}
+
+#newsPanel
+{
+  width: 100%;
+  /* position: absolute; */
+  background-color: rgb(67, 126, 194);
+  margin-top: 60px;
+  z-index: -100;
+  height: 550px;
+}
+
+#partnersPanel
+{
+  width: 100%;
+  /* position: absolute; */
+  /* background-color: rgb(67, 126, 194); */
+  margin-top: 60px;
+  z-index: -100;
+  height: 320px;
+}
+
+#landingPanel
+{
+  overflow-y: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #393a3d;
+  height: auto;
+}
+
+#subpageTitle
+{
+  font-size: 150px;
+  color: white;
+  text-align: center;
+  padding-top: 190px; 
+  text-shadow: 0px -2px 8px 12px grey;
+}
+
+#subpageTitle_secondary
+{
+  font-size: 100px;
+  color: white;
+  text-align: center;
+  padding-top: 100px; 
+  padding-bottom: 10px;
+  text-shadow: 0px -2px 8px 12px grey;
+}
+
+#aboutPanel_info
+{
+  width: 100%;
+  background-color: white;
+  color: black;
+  margin-top:80px;
+  /* padding-top: 80px; */
+  padding-bottom: 100px;
+  /* font-size: 28px; */
+}
+
+#teamPanel_info
+{
+  width: 100%;
+  background-color: white;
+  color: black;
+  margin-top: 120px;
+  padding-bottom: 100px;
+  font-size: 28px;
+}
+
+#partnersPanel_info
+{
+  width: 100%;
+  background-color: white;
+  /* position: absolute; */
+  color: black;
+  /* padding-top: 100px; */
+  /* margin-top: 350px; */
+  padding-bottom: 100px;
+  font-size: 28px;
+}
+
+#newsPanel_info
+{
+  width: 100%;
+  background-color: white;
+  /* position: absolute; */
+  color: black;
+  /* padding-top: 100px; */
+  /* margin-top: 700px; */
+  height:100%;
+  padding-bottom: 100px;
+  font-size: 28px;
+}
+
+#teamPanel_buttons
+{
+  width: 100%;
+  /* position: absolute; */
+  /* margin-top: 480px; */
+  padding-top: 0;
+}
+
+#newsButtons
+{
+  width: 100%;
+  /* position: absolute; */
+  /* margin-top: 600px; */
+  padding-top: 0;
+}
+
+#startingParagraph::first-letter
+{
+  font-size: 45px;
+}
+
+/* spacing between paragraphs */
+#startingParagraph
+{
+  margin-bottom: 46px;
+}
+.paragraph
+{
+  margin-bottom: 46px;
+}
+
+#to-mtl_train
+{
+  width: 550px;
+  padding: 20px;
+}
+
+#macu
+{
+  width: 100%;
+  /* padding-right: 40px; */
+  margin-bottom: 40px;
+}
+
+footer
+{
+  background-color: rgb(243, 243, 243);
+  /* position: relative; */
+  /* bottom: 0px; */
+  text-align: center;
+  height: 100%;
+}
+
+#macu_footer
+{
+  display: inline-block;
+  width: 300px;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+#msu_footer
+{
+  display: inline-block;
+  width: 200px;
+  margin-top: 50px;
+  margin-left: 80px;
+}
+
+
+#hyperloop_footer
+{
+  display: inline-block;
+  width: 300px;
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 30px;
+}
+
+hr 
+{
+  width: 80%;
+  height: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:rgb(168, 168, 168);
+  border: 0 none;
+  margin-top: 50px;
+  margin-bottom:10px;
+}
+
+#subheading
+{
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: rgb(95, 166, 248);
+}
+
+#panelDesc
+{
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+.teamBtn
+{
+  border-radius: 0;
+  height: 80px;
+  font-size: 25px;
+}
+
+.hiddenPanel
+{
+  visibility: hidden; 
+  display: none; /*very important; keeps the page size correct*/
+}
+
+.visiblePanel
+{
+  visibility: visible; 
+  display: inline-block; /*very important; keeps the page size correct*/
+}
+
+#contactForm
+{
+  margin-top: 200px;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  /* bottom: 20px; */
+  /* left: 15%; */
+  z-index: 10;
+  padding-top: 170px;
+  padding-bottom: 20px;
+  height: 540px;
+  color: #fff;
+  text-align: center;
+}
+
+hr.style-two {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(72, 157, 255), rgb(255, 255, 255));
+}
+
+#partner {
+  transition: transform .2s;
+}
+
+#partner:hover {
+  transform: scale(1.1);
+}
+
+p ol li 
+{
+  font-size: 38px;
+}
+
+ol
+{
+  padding-inline-start: 20px;
+  font-size: 25px;
+}

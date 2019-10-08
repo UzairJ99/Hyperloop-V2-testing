@@ -1,0 +1,83 @@
+<% include ./partials/header.ejs %>
+	
+	<!-- page backdrop -->
+  <div id="newsPanel">
+      <!-- news carousel from Bootstrap 4 -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div style="height: 550px;" class="carousel-inner">
+            <div class="carousel-item active">
+              <!-- first slide -->
+              <img class="d-block w-100" src="./images/slide_1.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <!-- second slide -->
+              <img class="d-block w-100" src="./images/zoompov.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <!-- second slide -->
+                <img class="d-block w-100" src="./images/pod_silhouette.png" alt="Third slide">
+              </div>
+          </div>
+          <!-- control buttons -->
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+      </div>
+      <div style="background-color: rgba(0, 0, 0, 0.795); right: 0%; left: 50%; top: 70px; bottom: 0px;" class="carousel-caption d-none d-md-block">
+          <h1 style="font-size: 50px;">BLOG</h1>
+          <p id="panelDesc">News on our Pod development and launch mission.</p>
+          <p id="panelDesc">Updates coming soon...</p>
+      </div>
+		  
+	</div>
+
+	<!-- button panel for different sub teams -->
+	<div id="newsButtons" class="btn-group" role="group">
+		<span style="width: 100%;"><button id="blogsBtn" class="btn btn-primary btn-block active teamBtn">News</button></span>
+		<span style="width: 100%;"><button id="missionsBtn" class="btn btn-primary btn-block teamBtn">Launch Mission</button></span>
+	</div>
+
+  <br> 
+
+	<!-- page content -->
+  <div id="newsPanel_info">
+			<div class="container" style="width: 70%;">
+        <div id="blogsPanel" class="visiblePanel" style="width: 100%;">
+          <br>
+          <h2 id="subheading">News</h2>
+          <!-- loop through each database entry-->
+          <% blogs.forEach(function(blog) {%>
+          <br>
+          <div class="card border-light mb-3 fluid" style="box-shadow: 0px 3px 6px 1px rgb(189, 189, 189);">
+            <div class="card-header">
+              <%=blog.title%>
+            </div>
+            <div class="card-body text-dark">
+              <% //img style="padding-bottom: 20px;" class="img-fluid" src="/images/slide_2.jpg"> %>
+              <h5 class="card-title"><%=blog.date%></h5>
+              <p style="font-size: 23px;" class="card-text"><%-blog.description%></p>
+              <% //button class="btn btn-outline-primary" style="float: right;">Read More/button> %>
+            </div>
+          </div>
+          <%})%>
+        </div>
+        <% // mission panel %>
+        <div id="missionsPanel" class="hiddenPanel" >
+          <br>
+          <h2 id="subheading">Launch Mission</h2>
+          <p class="paragraph">Launch updates coming soon.</p>
+        </div>
+			</div>
+  </div>
+	
+<% include ./partials/footer.ejs %>

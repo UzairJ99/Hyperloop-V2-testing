@@ -1,0 +1,125 @@
+<% include ./partials/header.ejs %>
+	
+	<!-- page backdrop -->
+  <div id="teamPanel">
+		<h1 id="subpageTitle_secondary">OUR TEAM</h1>
+		<div class="container">
+			<p id="panelDesc">
+        McMaster Hyperloop is comprised of 50 ambitious students, all working towards designing
+        and building a functional prototype which we will be taking to compete at the SpaceX Hyperloop
+        Pod Competition. We are striving to include all fields of research including biology, engineering, 
+        and economics, bringing a unique, unified approach to the international competition.
+			</p>
+		</div>
+	</div>
+
+	<!-- button panel for different sub teams -->
+	<div id="teamPanel_buttons" class="btn-group" role="group">
+		<span style="width: 100%;"><button id="adminBtn" class="btn btn-primary btn-block active teamBtn">Administrative</button></span>
+		<span style="width: 100%;"><button id="softwareBtn" class="btn btn-primary btn-block teamBtn">Software</button></span>
+		<span style="width: 100%;"><button id="mechanicalBtn" class="btn btn-primary btn-block teamBtn">Mechanical</button></span>
+		<span style="width: 100%;"><button id="electricalBtn" class="btn btn-primary btn-block teamBtn">Electrical</button></span>
+	</div>
+
+	<!-- page content -->
+  <div id="teamPanel_info">
+			<!-- container for all team panels -->
+			<div class="container">
+				<!-- admin panel -->
+				<div id="adminPanel" class="visiblePanel" >
+						<!-- content -->
+						<h2 id="subheading">Admin Team</h2>
+						<p class="paragraph">
+							<strong>Team Lead: Krishna Patel</strong>
+						</p>
+						<p>
+							The Administrative Team is comprised of four sub-teams:
+							<ol style="list-style-type: none;">
+								<li>
+									Sponsorships/External Relations
+								</li>
+								<li>
+									Internal Relations
+								</li>
+								<li>
+									Finance and Logistics
+								</li>
+								<li>
+									Marketing
+								</li>
+							</ol>
+						</p>
+					</div>
+				<!-- software panel -->
+				<div id="softwarePanel" class="hiddenPanel" >
+					<h2 id="subheading">Software Engineering Team</h2>
+					<p  class="paragraph">
+						<strong>Team Lead: Maninder Sran</strong>
+					</p>
+					<p>
+						The Software Team is comprised of four sub-teams:
+						<ol style="list-style-type: none;">
+							<li>
+								Embedded
+							</li>
+							<li>
+								Off Board Communications
+							</li>
+							<li>
+								On Board Communications
+							</li>
+							<li>
+								Web Development
+							</li>
+						</ol>
+					</p>
+				</div>
+				<!-- mech panel -->
+				<div id="mechanicalPanel" class="hiddenPanel" >
+					<h2 id="subheading">Mechanical Engineering Team</h2>
+					<p  class="paragraph">
+						<strong>Team Lead: Yuvrajvir Sidhu</strong>
+					</p>
+					<p>
+						The Mechanical Team is comprised of three sub-teams:
+						<ol style="list-style-type: none;">
+							<li>
+								Propulsion
+							</li>
+							<li>
+								Aerodynamics
+							</li>
+							<li>
+								Structure
+							</li>
+						</ol>
+					</p>
+				</div>
+				<!-- elec panel -->
+				<div id="electricalPanel" class="hiddenPanel" >
+					<h2 id="subheading">Electrical Engineering Team</h2>
+					<p  class="paragraph">
+						<strong>Team Lead: Willian Melnechuky</strong>
+					</p>
+					<p>
+						The Electrical Team is comprised of four sub-teams:
+						<ol style="list-style-type: none;">
+							<li>
+								Propulsion
+							</li>
+							<li>
+								Power Distribution
+							</li>
+							<li>
+								Embedded Electronics
+							</li>
+							<li>
+								Braking Systems
+							</li>
+						</ol>
+					</p>
+				</div>
+			</div>
+	</div>
+	
+<% include ./partials/footer.ejs %>

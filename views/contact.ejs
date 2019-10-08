@@ -1,0 +1,50 @@
+<% include ./partials/header.ejs %>
+  <!-- panel -->
+  <div class="container">
+    <div id="contactForm" class="row">
+      <!-- left panel for address info -->
+      <div class="col-md">
+        <span style="width: 100%;" id="addressInfo">
+          <h3 id="subheading">Address</h3>
+          <p>McMaster Hyperloop <br> 1280 Main St West <br> L8S 4L8 <br> Hamilton, Ontario</p>
+          <br>
+          <h3 id="subheading">E-mail:</h3>
+          <p>mcmasterhyperloopteam@gmail.com</p>
+        </span>
+      </div>
+      <!-- right panel for email -->
+      <div class="col-md">
+        <span style="width: 100%;" id="msgForm">
+          <h3 id="subheading">Let's Get In Touch</h3>
+          <form style="margin-bottom: 100px;" action="/" method="POST">
+            <!-- first and last name input -->
+            <div class="form-row">
+                <div class="col">
+                  <label>First Name *</label>
+                  <input name="name" type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="col">
+                  <label>Last Name *</label>
+                  <input name="lastName" type="text" class="form-control" placeholder="Last name">
+                </div>
+            </div>
+            <br>
+            <!-- email address -->
+            <div class="form-group">
+              <label for="inputEmail">E-mail *</label>
+              <input name="email" type="text" class="form-control" id="inputEmail" placeholder="exampleName@example.com">
+            </div>
+            <!-- message conent -->
+            <div class="form-group">
+              <label>Message *</label>
+              <textarea name="message" style="height: 10rem;" class="form-control" placeholder="Enter your message here."></textarea>
+            </div>
+            <!-- submission button -->
+            <button type="submit" class="btn btn-lg btn-primary">Send!</button>
+          </form>
+        </span>
+      </div>
+    </div>
+  </div>
+
+<% include ./partials/footer.ejs %>

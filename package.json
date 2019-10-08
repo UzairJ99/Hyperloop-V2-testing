@@ -1,0 +1,26 @@
+{
+  "name": "hyperloop",
+  "version": "1.0.0",
+  "description": "Hyperloop Team Website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UzairJ99/HyperloopSite.git"
+  },
+  "author": "Uzair Jawaid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UzairJ99/HyperloopSite/issues"
+  },
+  "homepage": "https://github.com/UzairJ99/HyperloopSite#readme",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.10",
+    "nodemailer": "^6.3.0"
+  }
+}
