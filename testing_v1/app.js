@@ -20,7 +20,8 @@ var blogSchema = new mongoose.Schema(
     title: String,
     image: String,
     description: String,
-    date: String
+    date: String,
+    index: Number
   }
 );
 
@@ -127,7 +128,10 @@ app.get("/blog", function(req, res)
       //the ejs file will reference each item from the database as 'blogs'
       res.render("blog.ejs", {blogs:allBlogs});
     }
-  });
+  }).sort(
+    //sorts in descending index order
+    {index: -1}
+  );
 
 });
 
