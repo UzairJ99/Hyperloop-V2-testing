@@ -5,10 +5,12 @@ var softwareBtn = document.getElementById("softwareBtn");
 var electricalBtn = document.getElementById("electricalBtn");
 var mechanicalBtn = document.getElementById("mechanicalBtn");
 var adminBtn = document.getElementById("adminBtn");
+var execBtn = document.getElementById("execBtn");
 var softwarePanel = document.getElementById("softwarePanel");
 var mechanicalPanel = document.getElementById("mechanicalPanel");
 var electricalPanel = document.getElementById("electricalPanel");
 var adminPanel = document.getElementById("adminPanel");
+var execPanel = document.getElementById("execPanel");
 
 //add event listeners to the team buttons
 softwareBtn.addEventListener("click", function() {
@@ -100,6 +102,7 @@ execBtn.addEventListener("click", function() {
   softwareBtn.classList.remove("active");
   mechanicalBtn.classList.remove("active");
   electricalBtn.classList.remove("active");
+  adminBtn.classList.remove("active");
   execBtn.classList.add("active");
   //make this panel visible
   execPanel.classList.add("visiblePanel");
