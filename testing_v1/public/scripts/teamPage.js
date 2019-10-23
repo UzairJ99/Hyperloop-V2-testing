@@ -11,78 +11,106 @@ var electricalPanel = document.getElementById("electricalPanel");
 var adminPanel = document.getElementById("adminPanel");
 
 //add event listeners to the team buttons
-softwareBtn.addEventListener("click", function()
-{
+softwareBtn.addEventListener("click", function() {
   //highlight correct button
-  softwareBtn.classList.add('active');
-  mechanicalBtn.classList.remove('active');
-  electricalBtn.classList.remove('active');
-  adminBtn.classList.remove('active');
+  softwareBtn.classList.add("active");
+  mechanicalBtn.classList.remove("active");
+  electricalBtn.classList.remove("active");
+  execBtn.classList.remove("active");
+  adminBtn.classList.remove("active");
   //make this panel visible
-  softwarePanel.classList.add('visiblePanel');
-  softwarePanel.classList.remove('hiddenPanel');
+  softwarePanel.classList.add("visiblePanel");
+  softwarePanel.classList.remove("hiddenPanel");
   //hide the other panels
-  mechanicalPanel.classList.remove('visiblePanel');
-  mechanicalPanel.classList.add('hiddenPanel');
-  electricalPanel.classList.remove('visiblePanel');
-  electricalPanel.classList.add('hiddenPanel');
-  adminPanel.classList.remove('visiblePanel');
-  adminPanel.classList.add('hiddenPanel');
+  mechanicalPanel.classList.remove("visiblePanel");
+  mechanicalPanel.classList.add("hiddenPanel");
+  electricalPanel.classList.remove("visiblePanel");
+  electricalPanel.classList.add("hiddenPanel");
+  adminPanel.classList.remove("visiblePanel");
+  adminPanel.classList.add("hiddenPanel");
+  execPanel.classList.remove("visiblePanel");
+  execPanel.classList.add("hiddenPanel");
 });
 
-electricalBtn.addEventListener("click", function()
-{
+electricalBtn.addEventListener("click", function() {
   //highlight correct button
-  softwareBtn.classList.remove('active');
-  mechanicalBtn.classList.remove('active');
-  electricalBtn.classList.add('active');
-  adminBtn.classList.remove('active');
+  softwareBtn.classList.remove("active");
+  mechanicalBtn.classList.remove("active");
+  electricalBtn.classList.add("active");
+  execBtn.classList.remove("active");
+  adminBtn.classList.remove("active");
   //make this panel visible
-  electricalPanel.classList.add('visiblePanel');
-  electricalPanel.classList.remove('hiddenPanel');
+  electricalPanel.classList.add("visiblePanel");
+  electricalPanel.classList.remove("hiddenPanel");
   //hide the other panels
-  mechanicalPanel.classList.remove('visiblePanel');
-  mechanicalPanel.classList.add('hiddenPanel');
-  softwarePanel.classList.remove('visiblePanel');
-  softwarePanel.classList.add('hiddenPanel');
-  adminPanel.classList.remove('visiblePanel');
-  adminPanel.classList.add('hiddenPanel');
+  mechanicalPanel.classList.remove("visiblePanel");
+  mechanicalPanel.classList.add("hiddenPanel");
+  softwarePanel.classList.remove("visiblePanel");
+  softwarePanel.classList.add("hiddenPanel");
+  adminPanel.classList.remove("visiblePanel");
+  adminPanel.classList.add("hiddenPanel");
+  execPanel.classList.remove("visiblePanel");
+  execPanel.classList.add("hiddenPanel");
 });
 
-mechanicalBtn.addEventListener("click", function()
-{
+mechanicalBtn.addEventListener("click", function() {
   //highlight correct button
-  softwareBtn.classList.remove('active');
-  mechanicalBtn.classList.add('active');
-  electricalBtn.classList.remove('active');
-  adminBtn.classList.remove('active');
+  softwareBtn.classList.remove("active");
+  mechanicalBtn.classList.add("active");
+  electricalBtn.classList.remove("active");
+  execBtn.classList.remove("active");
+  adminBtn.classList.remove("active");
   //make this panel visible
-  mechanicalPanel.classList.add('visiblePanel');
-  mechanicalPanel.classList.remove('hiddenPanel');
+  mechanicalPanel.classList.add("visiblePanel");
+  mechanicalPanel.classList.remove("hiddenPanel");
   //hide the other panels
-  electricalPanel.classList.remove('visiblePanel');
-  electricalPanel.classList.add('hiddenPanel');
-  softwarePanel.classList.remove('visiblePanel');
-  softwarePanel.classList.add('hiddenPanel');
-  adminPanel.classList.remove('visiblePanel');
-  adminPanel.classList.add('hiddenPanel');
+  electricalPanel.classList.remove("visiblePanel");
+  electricalPanel.classList.add("hiddenPanel");
+  softwarePanel.classList.remove("visiblePanel");
+  softwarePanel.classList.add("hiddenPanel");
+  adminPanel.classList.remove("visiblePanel");
+  adminPanel.classList.add("hiddenPanel");
+  execPanel.classList.remove("visiblePanel");
+  execPanel.classList.add("hiddenPanel");
 });
 
-adminBtn.addEventListener("click", function()
-{
+adminBtn.addEventListener("click", function() {
   //highlight correct button
-  softwareBtn.classList.remove('active');
-  mechanicalBtn.classList.remove('active');
-  electricalBtn.classList.remove('active');
-  adminBtn.classList.add('active');
+  softwareBtn.classList.remove("active");
+  mechanicalBtn.classList.remove("active");
+  electricalBtn.classList.remove("active");
+  execBtn.classList.remove("active");
+  adminBtn.classList.add("active");
   //make this panel visible
-  adminPanel.classList.add('visiblePanel');
-  adminPanel.classList.remove('hiddenPanel');
+  adminPanel.classList.add("visiblePanel");
+  adminPanel.classList.remove("hiddenPanel");
   //hide the other panels
-  electricalPanel.classList.remove('visiblePanel');
-  electricalPanel.classList.add('hiddenPanel');
-  softwarePanel.classList.remove('visiblePanel');
-  softwarePanel.classList.add('hiddenPanel');
-  mechanicalPanel.classList.remove('visiblePanel');
-  mechanicalPanel.classList.add('hiddenPanel');
+  electricalPanel.classList.remove("visiblePanel");
+  electricalPanel.classList.add("hiddenPanel");
+  softwarePanel.classList.remove("visiblePanel");
+  softwarePanel.classList.add("hiddenPanel");
+  mechanicalPanel.classList.remove("visiblePanel");
+  mechanicalPanel.classList.add("hiddenPanel");
+  execPanel.classList.remove("visiblePanel");
+  execPanel.classList.add("hiddenPanel");
+});
+
+execBtn.addEventListener("click", function() {
+  //highlight correct button
+  softwareBtn.classList.remove("active");
+  mechanicalBtn.classList.remove("active");
+  electricalBtn.classList.remove("active");
+  execBtn.classList.add("active");
+  //make this panel visible
+  execPanel.classList.add("visiblePanel");
+  execPanel.classList.remove("hiddenPanel");
+  //hide the other panels
+  electricalPanel.classList.remove("visiblePanel");
+  electricalPanel.classList.add("hiddenPanel");
+  softwarePanel.classList.remove("visiblePanel");
+  softwarePanel.classList.add("hiddenPanel");
+  mechanicalPanel.classList.remove("visiblePanel");
+  mechanicalPanel.classList.add("hiddenPanel");
+  adminPanel.classList.remove("visiblePanel");
+  adminPanel.classList.add("hiddenPanel");
 });
