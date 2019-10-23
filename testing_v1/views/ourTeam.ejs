@@ -14,12 +14,14 @@
 	</div>
 
 	<!-- button panel for different sub teams -->
-	<div id="teamPanel_buttons" class="btn-group" role="group">
-		<span style="width: 100%;"><button id="execBtn" class="btn btn-primary btn-block teamBtn">Executive</button></span>
-		<span style="width: 100%;"><button id="adminBtn" class="btn btn-primary btn-block active teamBtn">Administrative</button></span>
-		<span style="width: 100%;"><button id="softwareBtn" class="btn btn-primary btn-block teamBtn">Software</button></span>
-		<span style="width: 100%;"><button id="mechanicalBtn" class="btn btn-primary btn-block teamBtn">Mechanical</button></span>
-		<span style="width: 100%;"><button id="electricalBtn" class="btn btn-primary btn-block teamBtn">Electrical</button></span>
+	<div id="teamPanel_buttons" class="column" role="group">
+		<div class="row">
+			<div class="col-sm" style="width: 100%; padding: 0;"><button id="execBtn" class="btn btn-primary btn-block active teamBtn">Executive</button></div>
+			<div class="col-sm" style="width: 100%; padding: 0;"><button id="adminBtn" class="btn btn-primary btn-block teamBtn">Administrative</button></div>
+			<div class="col-sm" style="width: 100%; padding: 0;"><button id="softwareBtn" class="btn btn-primary btn-block teamBtn">Software</button></div>
+			<div class="col-sm" style="width: 100%; padding: 0;"><button id="mechanicalBtn" class="btn btn-primary btn-block teamBtn">Mechanical</button></div>
+			<div class="col-sm" style="width: 100%; padding: 0;"><button id="electricalBtn" class="btn btn-primary btn-block teamBtn">Electrical</button></div>
+		</div>
 	</div>
 
 	<!-- page content -->
@@ -27,7 +29,7 @@
 		<!-- container for all team panels -->
 		<div class="container">
 			<!-- admin panel -->
-			<div id="adminPanel" class="visiblePanel" >
+			<div id="adminPanel" class="hiddenPanel" >
 					<!-- content -->
 					<h2 id="subheading">Admin Team</h2>
 					<p class="paragraph">
@@ -121,7 +123,7 @@
 				</p>
 			</div>
 			<!-- exec panel -->
-			<div id="execPanel" class="hiddenPanel" >
+			<div id="execPanel" class="visiblePanel" >
 				<h2 id="subheading">Executive Team</h2>
 				
 			</div>
