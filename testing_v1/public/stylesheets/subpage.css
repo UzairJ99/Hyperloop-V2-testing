@@ -16,6 +16,12 @@
   z-index: -100;
 }
 
+.rounded-circle
+{
+  border-radius: 50%;
+  align-content: center;
+}
+
 #teamPanel
 {
   width: 100%;
